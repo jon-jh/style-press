@@ -1,3 +1,4 @@
+@use "sass:color";
 $primary-color: #24292e; // GitHub dark gray
 $text-color: #ffffff;
 
@@ -29,13 +30,15 @@ $text-color: #ffffff;
     gap: 16px;
 
     a {
+
       color: $text-color;
       text-decoration: none;
       font-size: 0.95rem;
 
       &:hover {
-        color: darken($text-color, 50%);
+        color: color.adjust($text-color, $lightness: -50%, $space: oklch);
       }
+
     }
   }
 

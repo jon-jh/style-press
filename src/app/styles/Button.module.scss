@@ -1,3 +1,4 @@
+@use "sass:color";
 $primary-color: #0366d6; // GitHub blue
 
 .button {
@@ -10,8 +11,8 @@ $primary-color: #0366d6; // GitHub blue
   font-weight: 600;
 
   &:hover {
-    background-color: adjust-hue($primary-color, 20deg);
-  }
+    background-color: color.adjust($primary-color, $hue: 20deg, $space:oklch);}
+
 
   // Shrink the button on click
   &:active {
