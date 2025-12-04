@@ -1,10 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Button from "./components/Button";
+import NavBar from "./components/NavBar";
+
 
 export default function Home() {
   return (
     <div className={styles.page}>
+      <NavBar/>
       <main className={styles.main}>
         
         <Image
@@ -17,7 +20,7 @@ export default function Home() {
         />
         <div className={styles.intro}>
           <h1>To get started, edit the page.js file.</h1>
-          <Button>This is an SCSS Styled Test Button</Button>
+          <Button>Click me!</Button>
           <p>
             Looking for a starting point or more instructions? Head over to{" "}
             <a

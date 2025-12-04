@@ -1,4 +1,4 @@
-$primary-color: blue;
+$primary-color: #0366d6; // GitHub blue
 
 .button {
   background-color: $primary-color;
@@ -10,10 +10,11 @@ $primary-color: blue;
   font-weight: 600;
 
   &:hover {
-    background-color: darken($primary-color, 10%);
+    background-color: adjust-hue($primary-color, 20deg);
   }
 
+  // Shrink the button on click
   &:active {
-    transform: scale(0.98);
+    transform: scale(0.95);
   }
 }
