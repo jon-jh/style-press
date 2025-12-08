@@ -1,0 +1,26 @@
+.reloadContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+
+  .reloadText {
+    font-size: 14px;
+    color: #555;
+    white-space: nowrap;
+  }
+
+  .progressBar {
+    flex: 1;
+    height: 6px;
+    background-color: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+
+    .progressFill {
+      height: 100%;
+      background-color: #0070f3; // Next.js blue
+      transition: width 1s linear;
+    }
+  }
+}

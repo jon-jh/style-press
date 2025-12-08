@@ -57,16 +57,20 @@ Build a web app that showcases multiple WordPress‑powered templates with moder
 
 ### Phase 1: Styling & Components  
 - Leveraged prior CSS experience to transition into **SCSS** (this project uses SCSS exclusively).  
-- Installed **Sass** for SCSS support. Ran `npm audit`, identified a critical Next.js vulnerability, and upgraded to `next@16.0.7` to resolve it.  
+- Installed **Sass** for **SCSS** support. Ran `npm audit`, identified a critical Next.js vulnerability, and upgraded to `next@16.0.7` to resolve it.  
 - Created Navigation Bar and Footer component with placeholder links, tested SCSS styling features.  
 
 ### Phase 1: Design Workflow  
 - Installed **Figma** and began learning design fundamentals.  
 - Designed the **global layout** (header, footer, main content) in Figma.  
 - Refined designs using Figma Make.  
-- Converted Figma Tailwind CSS output into SCSS, styled the app using both Figma code generation and GitHub Copilot AI assistance.  
+- Converted Figma Tailwind CSS output into **SCSS**, styled the app using both Figma code generation and GitHub Copilot AI assistance.  
 
 ### Phase 1: Routing & Structure  
 - Added nav bar links for all planned pages (Portfolio, Blog, E‑Commerce, Event, Non‑Profit, SaaS).  
-- Confirmed routing works correctly, with each link opening a placeholder component page.  
+- Confirmed **routing** works correctly, with each link opening a placeholder component page.  
 - Followed best practices for folder naming conventions in the App Router structure.  
+
+- Integrate **WordPress** API by creating WordPress account, publishing website and targeting API endpoint. Use CoPilot to help understand initial code and tested until app is live updating with every WordPress post. (**Blog section** in the app)
+
+- Made a reusable loading-bar component to count down WordPress API refresh interval. (60 seconds)

@@ -1,8 +1,51 @@
+"use client";
+import { useEffect, useState } from "react";
+import LoadingBar from "../components/LoadingBar";
+
 export default function BlogPage() {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  async function loadPosts() {
+    setLoading(true);
+    try {
+      const res = await fetch(
+        "https://public-api.wordpress.com/rest/v1.1/sites/stylepress4.wordpress.com/posts/"
+      );
+      const data = await res.json();
+      setPosts(data.posts || []);
+    } catch (err) {
+      console.error("Failed to fetch posts", err);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    loadPosts();
+  }, []);
+
   return (
     <main>
-      <h1>Blog Template (Coming Soon)</h1>
-      <p>This is a placeholder for the Blog template.</p>
+      <h1>Blog</h1>
+
+      {loading}
+
+      {/* LoadingBar handles countdown + refresh */}
+      <LoadingBar interval={60} onRefresh={loadPosts} />
+
+      {posts.length === 0 && !loading ? (
+        <p>No posts found.</p>
+      ) : (
+        <ul>
+          {posts.map((post) => (
+            <li key={post.ID}>
+              <h2 dangerouslySetInnerHTML={{ __html: post.title }} />
+              <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+            </li>
+          ))}
+        </ul>
+      )}
     </main>
-  )
+  );
 }
