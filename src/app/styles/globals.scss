@@ -44,13 +44,6 @@
   outline-color: color-mix(in oklch, var(--ring) 50%, transparent);
 }
 
-body {
-  background-color: var(--background);
-  color: var(--foreground);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 // Optional SCSS mixin for convenience
 @mixin theme-color($property, $var) {
   #{$property}: var(--#{$var});
@@ -64,16 +57,20 @@ body {
 }
 
 html, body {
+  margin: 0;
+  box-sizing: border-box;
   height: 100%; // ensure full viewport height
 }
 
 body {
   display: flex;
+  padding-top: 60px;
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--background);
   color: var(--foreground);
 }
+
 
 main {
   flex: 1; // expands to fill space between NavBar and Footer

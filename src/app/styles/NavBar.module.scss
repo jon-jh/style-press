@@ -5,7 +5,7 @@ $teal: #14b8a6;    // Tailwind teal-500
 $text-color: #ffffff;
 
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 1000;
   width: 100%;
