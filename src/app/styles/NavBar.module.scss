@@ -4,6 +4,14 @@ $emerald: #10b981; // Tailwind emerald-500
 $teal: #14b8a6;    // Tailwind teal-500
 $text-color: #ffffff;
 
+.active {
+  color: #fff;
+  background-color: #0070f3;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+
 .navbar {
   position: absolute;
   top: 0;
