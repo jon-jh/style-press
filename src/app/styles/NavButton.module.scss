@@ -1,0 +1,67 @@
+.button {
+  position: relative;
+
+  width: clamp(8em, 20vw, 15em); /* min 8em, fluid middle, max 15em */
+
+  background-color: #1f2937; /* neutral-800 */
+  padding: 0.75rem 1rem;
+  border: 1px solid transparent;
+  color: #f9fafb; /* text-gray-50 */
+  font-size: 1rem;
+  font-weight: bold;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+
+  &:hover {
+    border-color: #fda4af; /* rose-300 */
+    color: #fda4af;
+  }
+
+  /* violet orb */
+  &::before {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    right: 0.25rem;
+    top: 0.25rem;
+    z-index: 0;
+    background-color: #8b5cf6; /* violet-500 */
+    border-radius: 50%;
+    filter: blur(12px);
+    transition: all 0.5s ease;
+  }
+
+  /* rose orb */
+  &::after {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    right: 2rem;
+    top: 0.75rem;
+    z-index: 0;
+    background-color: #fda4af; /* rose-300 */
+    border-radius: 50%;
+    filter: blur(16px);
+    transition: all 0.7s ease;
+  }
+
+  /* hover animations: move the orbs */
+  &:hover::before {
+    right: 3rem;
+    bottom: -2rem;
+    box-shadow: 20px 20px 30px 30px #a21caf; /* mimic Tailwind box-shadow */
+  }
+
+  &:hover::after {
+    right: -2rem;
+  }
+}
+
+.active {
+  border-color: #fda4af;
+  color: #fda4af;
+  background: linear-gradient(135deg, #4c1d95, #f43f5e);
+}

@@ -5,7 +5,6 @@ $text-gray: #9ca3af; // Tailwind gray-400
 $text-color: #ffffff;
 
 .footer {
-  border-top: 1px solid rgba($text-color, 0.1);
   background: rgba($text-color, 0.05);
   backdrop-filter: blur(16px); // backdrop-blur-lg
   margin-top: auto;

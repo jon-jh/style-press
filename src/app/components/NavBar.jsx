@@ -1,12 +1,12 @@
-"use client"; // required in Next.js App Router for hooks
+"use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import styles from "../styles/NavBar.module.scss";
+import NavButton from "./NavButton"; // import your new component
 
 const NavBar = () => {
   const pathname = usePathname();
-
   const navigationLinks = ["portfolio", "e-commerce", "blog", "event"];
 
   return (
@@ -19,23 +19,14 @@ const NavBar = () => {
 
         {/* Navigation Links */}
         <nav className={styles.links}>
-          {navigationLinks.map((link, index) => {
+          {navigationLinks.map((link) => {
             const href = `/${link}`;
             const isActive = pathname === href;
 
             return (
-              <Link
-                key={link}
-                href={href}
-                className={`
-                  ${index === 0 ? styles.first : ""}
-                  ${index === navigationLinks.length - 1 ? styles.last : ""}
-                  ${index !== navigationLinks.length - 1 ? styles.divider : ""}
-                  ${isActive ? styles.active : ""}
-                `}
-              >
+              <NavButton key={link} href={href} isActive={isActive}>
                 {link}
-              </Link>
+              </NavButton>
             );
           })}
         </nav>

@@ -56,7 +56,8 @@
   border-radius: var(--radius);
 }
 
-html, body {
+html,
+body {
   margin: 0;
   box-sizing: border-box;
   height: 100%; // ensure full viewport height
@@ -64,13 +65,11 @@ html, body {
 
 body {
   display: flex;
-  padding-top: 60px;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 50vh;
   background-color: var(--background);
   color: var(--foreground);
 }
-
 
 main {
   flex: 1; // expands to fill space between NavBar and Footer
