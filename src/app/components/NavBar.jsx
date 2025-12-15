@@ -32,9 +32,12 @@ const NavBar = () => {
         </nav>
 
         {/* Profile / Avatar */}
-        <div className={styles.profile}>
+        <a
+          href="https://www.linkedin.com/in/jonathan-dh"
+          className={styles.profile}
+        >
           <img src="/globe.svg" alt="Profile" />
-        </div>
+        </a>
       </div>
     </header>
   );

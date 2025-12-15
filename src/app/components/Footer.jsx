@@ -5,9 +5,10 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         {/* Left info block */}
-        <div className={styles.info}>
-          © 2025 Your Company
-        </div>
+        
+        <a className={styles.info} href="https://www.linkedin.com/in/jonathan-dh">
+          © 2025 Jonathan H
+        </a>
 
         {/* Navigation links */}
         <div className={styles.links}>

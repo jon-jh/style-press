@@ -11,7 +11,7 @@ $app-box-shadow: 5 5px 5px rgba(0, 0, 0, 1);
 }
 
 body:has([data-bg="portfolio-bg"]) .bg-layer {
-  background-image: url("/images/bac-3.jpg");
+  background-image: url("/images/bac-2.jpg");
 }
 body:has([data-bg="ecommerce-bg"]) .bg-layer {
   background-image: url("/images/bac-1.jpg");
@@ -115,6 +115,10 @@ main {
   padding-right: 2rem;
   flex: 1; // expands to fill space between NavBar and Footer
   justify-self: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 {
