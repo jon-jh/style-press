@@ -6,7 +6,7 @@ const Footer = () => {
       <div className={styles.container}>
         {/* Left info block */}
         <div className={styles.info}>
-          © 2025 Your Company. All rights reserved.
+          © 2025 Your Company
         </div>
 
         {/* Navigation links */}

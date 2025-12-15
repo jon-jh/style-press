@@ -59,3 +59,12 @@ $highlight: #21436b;
     }
   }
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    .logo,
+    .profile {
+      display: none;
+    }
+  }
+}
