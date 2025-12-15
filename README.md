@@ -86,3 +86,9 @@ Build a web app that showcases multiple WordPress‑powered templates with moder
 - Completed the WordPress page design with new animations from **UIVerse**.  
 - Converted Tailwind components into **SCSS modules** to align with project standards.  
 - Implemented **animated placeholders** across all pages for a dynamic user experience.  
+
+- Added **dynamic wallpapers** for each page.
+- Learned to apply wallpaper styling from main layout.js, then load them per page using globals.SCSS.
+- Improved animations for each page. 
+- **SCSS** styling overhaul for all pages using variables.
+- **Responsive Layout** which scales to fit phone screens.
