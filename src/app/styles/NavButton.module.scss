@@ -3,9 +3,7 @@ $hover-color:#fda4af;
 
 .button {
   position: relative;
-
-  width: clamp(9em, 20vw, 15em); /* min 8em, fluid middle, max 15em */
-
+  width: clamp(9.33em, 20vw, 15em);
   background-color: #1f2937; /* neutral-800 */
   padding: 0.75rem 1rem;
   border: 1px solid transparent;

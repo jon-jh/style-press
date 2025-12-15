@@ -2,7 +2,9 @@
 $app-box-shadow: 5 5px 5px rgba(0, 0, 0, 1);
 
 .reloadContainer {
-  padding: 0 0.5rem;
+  box-sizing: border-box;
+  min-width: 28rem;
+  padding: 5 0.5rem;
   display: flex;
   background-color: #1f2937;
   border-radius: 2rem; /* rounded-xl */
@@ -19,6 +21,7 @@ $app-box-shadow: 5 5px 5px rgba(0, 0, 0, 1);
 
   .progressBar {
     flex: 1;
+    min-width: 10rem;
     height: 6px;
     background-color: #eee;
     border-radius: 3px;

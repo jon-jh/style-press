@@ -93,6 +93,7 @@ body:has([data-bg="wordpress-bg"]) .bg-layer {
 
 html,
 body {
+  min-width: 480px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -110,11 +111,19 @@ body {
 }
 
 main {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   flex: 1; // expands to fill space between NavBar and Footer
   justify-self: center;
 }
+
+h1 {
+  box-sizing: border-box;
+  min-width: 28rem; // match card size
+  font-size: clamp(0.9rem, 3vw, 2rem);
+  text-align: center;
+}
+// h1 text scale on narrow screen width. keep within screen.
 
 h1,
 p {
