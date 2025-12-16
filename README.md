@@ -1,7 +1,6 @@
-| Portrait | Wide |
+| Figma Design to Code | Final with WordPress API |
 |----------|------|
-| <a href="docs/screenshots/figma-to-code.jpg"><img src="docs/screenshots/figma-to-code.jpg" width="300"/></a><br/>Designing in Figma | <a href="docs/screenshots/screenshot.jpg"><img src="docs/screenshots/screenshot.jpg" width="600"/></a><br/>WordPress dynamic data |
-
+| <a href="docs/screenshots/figma-to-code.jpg"><img src="docs/screenshots/figma-to-code.jpg" width="300"/></a> | <a href="docs/screenshots/screenshot.jpg"><img src="docs/screenshots/screenshot.jpg" width="600"/></a> |
 
 ## Goal
 Build an app using popular tools and frameworks to demonstrate adaptability.
