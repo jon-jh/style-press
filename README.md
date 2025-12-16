@@ -1,8 +1,5 @@
 ## Goal
-Build a web app that showcases multiple WordPress‑powered templates with modern front‑end integration, performance optimization, and analytics.
-
-## Integration
-- WordPress REST API
+Build an app using popular tools and frameworks to demonstrate adaptability.
 
 ## Tools
 - Figma  
@@ -10,8 +7,7 @@ Build a web app that showcases multiple WordPress‑powered templates with moder
 - Git/GitHub  
 - Lighthouse & GTmetrix  
 - GA4, GTM, HotJar  
-- Core Web Vitals  
-- GitHub Copilot  
+- Core Web Vitals 
 
 ## Tech Stack  
 - Languages: HTML5, CSS3, JavaScript (ES6+)  
@@ -20,14 +16,6 @@ Build a web app that showcases multiple WordPress‑powered templates with moder
 - Deployment: Vercel  
 - Database: Neon  
 
-## Templates
-- SaaS  
-- Portfolio  
-- E‑commerce  
-- Blog  
-- Event  
-- Non‑profit  
-
 ## Skill Areas
 - Design & UI/UX  
 - Performance optimization  
@@ -35,8 +23,7 @@ Build a web app that showcases multiple WordPress‑powered templates with moder
 - Analytics & tracking  
 - Accessibility (WCAG)  
 - SEO & structured data  
-- AI‑assisted development  
-
+- AI‑tools 
 
 ## Phases
 - **Phase 1:** Environment setup + Figma + SCSS [complete]
